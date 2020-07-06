@@ -1,0 +1,49 @@
+.cta {
+  font-size: 8.5rem;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s ease;
+  // border-left: 2px solid white;
+
+  width: 300px;
+  margin: 0 auto;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 4px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    background: white;
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  &:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.work-cta {
+  color: $first-c;
+}
+.about-cta::after {
+  background: $first-c;
+}
+.about-cta,
+.work-cta {
+  opacity: 0;
+}
+
+@media (max-width: 960px) {
+  .about-cta,
+  .work-cta {
+    width: 30%;
+  }
+}

@@ -1,0 +1,126 @@
+@import "config";
+@import "home";
+@import "work";
+@import "buttons";
+
+.width {
+  height: 50px;
+  width: 50px;
+  color: rgb(241, 230, 230);
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  font-size: 1.5rem;
+  z-index: 10000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.4;
+  color: white;
+  height: 100vh;
+}
+h1 {
+  font-size: 2.5rem;
+
+  font-family: "Ultra", sans-serif;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+//////NAV//////
+
+nav {
+  padding: 0 10%;
+  background: rgb(8, 8, 8);
+  height: 10vh;
+
+  display: flex;
+
+  align-items: center;
+  .logo {
+    h1 {
+      transition: all 0.5s ease;
+    }
+
+    span {
+      color: $first-c;
+      transition: all 0.5s ease;
+    }
+    &:hover h1 {
+      color: $first-c;
+    }
+    &:hover span {
+      color: white;
+    }
+  }
+}
+
+//FOOTER////
+
+footer {
+  background: rgb(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4em;
+  p {
+    font-size: 1.5rem;
+  }
+  ul {
+    display: flex;
+    margin-top: 1em;
+    li {
+      margin: 0 1em;
+
+      a {
+        font-size: 1.5rem;
+        transition: color 0.5s ease;
+        &:hover {
+          color: $first-c;
+        }
+      }
+    }
+  }
+}
+
+//Screen Transitions
+.loading-screen {
+  position: relative;
+  background-color: $first-c;
+  width: 0%;
+  height: 100%;
+}
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
