@@ -63,3 +63,18 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .home-wrapper {
+    .home-left {
+      p {
+        font-size: 2rem;
+      }
+    }
+    .home-right {
+      a {
+        font-size: 3rem;
+      }
+    }
+  }
+}
