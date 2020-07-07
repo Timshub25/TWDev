@@ -25,7 +25,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../images/orange.jpg");
+  background-image: url("../images/newcastle-drone.jpg");
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -101,7 +101,7 @@
 
 .work-wrapper h2 {
   padding-top: 1em;
-  font-size: 3rem;
+  font-size: 4rem;
   border-bottom: 2px solid white;
   width: 20rem;
   margin: 0 auto;
@@ -120,7 +120,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 10%;
-  margin-top: 2em;
+  margin-top: 6em;
 }
 
 .projects .project {
@@ -134,7 +134,7 @@
 }
 
 .projects .project:hover .content {
-  opacity: 1;
+  opacity: 0.9;
   border-radius: 4em;
 }
 
@@ -149,7 +149,7 @@
   height: 100%;
   width: 100%;
   background: white;
-  color: #e07009;
+  color: #0a88d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +171,121 @@
 .projects .project-vhep {
   background-image: url("../images/vhep.png");
   background-position: center;
+}
+
+.about-wrapper {
+  min-height: 75vh;
+}
+
+section {
+  padding: 5% 10%;
+}
+
+.services-wrapper {
+  padding: 2em 0 4em 0;
+  background: gray;
+  background-image: url("../images/coding.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  text-align: center;
+}
+
+.services-wrapper h2 {
+  font-size: 4rem;
+  border-bottom: 2px solid white;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-wrapper .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.services-wrapper .services .service {
+  max-width: 300px;
+}
+
+.services-wrapper .services .service h3 {
+  font-size: 2rem;
+}
+
+.services-wrapper .services .service p {
+  font-size: 1.5rem;
+}
+
+.about-me {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+      grid-template-areas: "title img" "subtitle img" "body img";
+}
+
+.about-me .about-me-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  font-size: 3rem;
+}
+
+.about-me .about-me-subtitle {
+  font-size: 2rem;
+  background: #0a88d1;
+  padding: 0.25em 1em;
+  margin-left: -1em;
+  width: calc(100% + 2em);
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subtitle;
+  grid-column: 1 / -1;
+  position: relative;
+  margin-bottom: 1em;
+  z-index: 1;
+}
+
+.about-me .about-me-body {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: body;
+}
+
+.about-me .about-me-body p {
+  font-size: 1.5rem;
+}
+
+.about-me img {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: img;
+}
+
+@media (max-width: 670px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
 }
 
 .cta {
@@ -210,11 +325,11 @@
 }
 
 .work-cta {
-  color: #e07009;
+  color: #0a88d1;
 }
 
 .about-cta::after {
-  background: #e07009;
+  background: #0a88d1;
 }
 
 .about-cta,
@@ -227,6 +342,21 @@
   .work-cta {
     width: 30%;
   }
+}
+
+.my-work {
+  font-size: 2rem;
+  background: #0a88d1;
+  padding: 0.3em 1em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+.my-work:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: black;
 }
 
 .width {
@@ -299,13 +429,13 @@ nav .logo h1 {
 }
 
 nav .logo span {
-  color: #e07009;
+  color: #0a88d1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 nav .logo:hover h1 {
-  color: #e07009;
+  color: #0a88d1;
 }
 
 nav .logo:hover span {
@@ -352,12 +482,12 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #e07009;
+  color: #0a88d1;
 }
 
 .loading-screen {
   position: relative;
-  background-color: #e07009;
+  background-color: #0a88d1;
   width: 0%;
   height: 100%;
 }

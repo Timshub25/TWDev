@@ -47,3 +47,15 @@
     width: 30%;
   }
 }
+
+.my-work {
+  font-size: 2rem;
+  background: $first-c;
+  padding: 0.3em 1em;
+  transition: all 0.5s ease;
+  display: inline-block;
+  &:hover {
+    transform: scale(1.1);
+    color: black;
+  }
+}

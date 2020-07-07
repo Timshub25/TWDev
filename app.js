@@ -30,7 +30,6 @@ function contentAnimation() {
 
 function pageTransition() {
   let tl = gsap.timeline();
-
   tl.to(".loading-screen", {
     duration: 0.8,
     width: "100%",
